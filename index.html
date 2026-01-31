@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./lastname-firstname.css" />
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon" class="favicon">
+    <!-- <script src="./script.js" defer></script> -->
+   
+</head>
+<body>
+    
+   
+    <header>
+        <nav class="container">
+            <a class="logo" href="#">
+                <img src="Logo.png" class="wh-ico" width="36px" height="36px" alt="">
+            </a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!-- <i class="uil uil-moon toggle-btn"></i> -->
+            </div>
+        </nav>
+    </header>
+
+   <main class="main" id="main">
+    <section class="showcase-area" id="home">
+            <div class="container">
+                <div class="showcase-info">
+                    <h3 class="sub-heading">Greetings, I am</h3>
+                    <h1 class="heading">Justine Mantua</h1>
+                    <p class="text">
+                         BSIT Student | Aspiring Web Developer | Problem Solver | Tech Enthusiast 
+                    </p>
+                    <div class="cta">
+                        <a href="mailto:calamba.isaiah@gmail.com" class="btn">Lets Talk</a>
+                       
+                    </div>
+                </div>
+                <div class="showcase-image">
+                    <img src="Profile.jpg" class="person" alt="profile">
+                    <p class="person-text"></p>
+                </div>
+            </div>
+        </section>
+
+         <section style="height: 50px">
+            <div id="services"></div>
+        </section>
+
+         <section class="services section">
+            <div class="container">
+                <div class="services-info">
+                    <h1 class="heading2">About Me</h1>
+                    <p class="text">
+                        I'm a student currently learning programming and web development, with a growing interest in back-end development. I enjoy building projects, understanding how systems work behind the scenes, and continuously improving my skills through hands-on practice.
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="uil uil-server-network"></i>
+                        <h4>Back-End Development</h4>
+                        <p>I’m learning back-end development by building small projects, designing APIs, and working with databases. I mainly use JavaScript and C#, and I focus on writing clean, understandable code while improving my knowledge of performance and security best practices.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="uil uil-laptop"></i>
+                        <h4>Front-End Fundamentals</h4>
+                        <p>While not my main focus, I have a solid foundation in HTML, CSS, and basic responsive design. I aim to write clean code and build simple, functional interfaces that support the overall user experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="uil uil-lightbulb-alt"></i>
+                        <h4>Problem Solving</h4>
+                        <p>I enjoy solving technical problems and breaking complex ideas into smaller, manageable parts. I like understanding how things work and applying what I learn to create solutions that actually function.</p>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+        </section>
+
+        
+
+
+            <section id="contact" class="contact-me section">
+          <div class="container contact-container">
+            <div class="contact-grid">
+              <div class="contact-left">
+                <img src="Profile.jpg" alt="Professional photo of Justine Mantua" class="contact-photo">
+                <h2 class="contact-heading">Contact Me</h2>
+                <p class="contact-lead">I am available for freelance work, internships, and professional collaborations. Please use the form to get in touch — I will respond within 2 business days.</p>
+                <div class="socials" aria-label="Social links">
+                  <a href="https://www.facebook.com/justine.mantua.5" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="social-icon"></a>
+                  <a href="https://github.com/JustineMantua" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon"></a>
+                  <a href="https://www.instagram.com/terrifyinglydoomed?igsh=NG9ia2IzZWxqMjA5&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" alt="Instagram" class="social-icon"></a>
+                </div>
+              </div>
+
+      <div class="contact-right">
+        <form id="contact-form" class="contact-form" onsubmit="sendContact(event)">
+          <label for="contact-name">Full name</label>
+          <input id="contact-name" class="contact-input" name="name" type="text" required>
+
+          <label for="contact-email">Email address</label>
+          <input id="contact-email" class="contact-input" name="email" type="email" required>
+
+          <label for="contact-subject">Subject</label>
+          <input id="contact-subject" class="contact-input" name="subject" type="text">
+
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" class="contact-textarea" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="contact-submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-left">
+      
+      <div>
+        <p class="footer-text">Justine Mantua — BSIT Student | Aspiring Web Developer</p>
+      </div>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/justine.mantua.5" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="social-icon"></a>
+                  <a href="https://github.com/JustineMantua" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon"></a>
+                  <a href="https://www.instagram.com/terrifyinglydoomed?igsh=NG9ia2IzZWxqMjA5&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" alt="Instagram" class="social-icon"></a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <small>© <span id="year"></span> Justine Mantua. All rights reserved.</small>
+  </div>
+</footer>
+
+   </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
