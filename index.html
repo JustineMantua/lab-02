@@ -3,12 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Justine Mantua - Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS for remaining styles -->
     <link rel="stylesheet" href="./lastname-firstname.css" />
-    <!-- <script src="./script.js" defer></script> -->
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon" class="favicon">
+    
+    <!-- Iconscout UNIcons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
-<body>
-    <!-- empty -->
-</body>
+<body class="overflow-x-hidden bg-gray-50">
+    
+    <header>
+        <nav class="container">
+            <a class="logo" href="#">
+                <img src="Logo.png" class="wh-ico" width="36px" height="36px" alt="">
+            </a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#submissions" class="nav-link">Submissions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <!-- Hero Section with Tailwind CSS -->
+        <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-8 lg:px-16">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[500px]">
+                    <!-- Left Side - Text Content -->
+                    <div class="order-2 lg:order-1 text-center lg:text-left">
+                        <h3 class="text-sm md:text-base uppercase tracking-wide text-blue-900 border-l-4 border-purple-500 pl-3 inline-block mb-4 font-semibold">
+                            Greetings, I am
+                        </h3>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-4 leading-tight">
+                            Justine Mantua
+                        </h1>
+                        <p class="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
+                            BSIT Student | Aspiring Web Developer | Problem Solver | Tech Enthusiast
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="/cdn-cgi/l/email-protection#0d6e6c616c606f6c23647e6c646c654d6a606c6461236e6260" class="inline-block px-8 py-3 bg-blue-600 text-white rounded-2xl font-medium text-sm tracking-wide transition-all duration-300 hover:bg-blue-700 hover:scale-105 shadow-md">
+                                Let's Talk
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Image -->
+                    <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                        <div class="relative">
+                            <img src="Profile.jpg" 
+                                 alt="Justine Mantua Profile" 
+                                 class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-8 border-white transition-transform duration-300 hover:scale-105"
+                                 style="box-shadow: 0 0 0 8px #fff, 0 20px 60px rgba(100, 150, 255, 0.4), 0 0 30px rgba(147, 112, 219, 0.3);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="height: 50px">
+            <div id="services"></div>
+        </section>
+
+        <!-- About Me Section -->
+    <!-- About Me Section -->
+<section class="services section py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <div class="services-info max-w-3xl mx-auto">
+            <h1 class="heading2 text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+                About Me
+            </h1>
+
+            <p class="text text-gray-600 leading-relaxed">
+                I'm a student currently learning programming and web development, with a growing interest in back-end development. I enjoy building projects, understanding how systems work behind the scenes, and continuously improving my skills through hands-on practice.
+            </p>
+        </div>
+
+        <div class="services-grid mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-center">
+            
+            <div class="service-card p-6 shadow-lg rounded-lg">
+                <i class="uil uil-server-network text-4xl text-blue-600"></i>
+                <h4 class="font-bold text-lg mt-4">Back-End Development</h4>
+                <p class="text-gray-600 mt-2">
+                    I'm learning back-end development by building small projects, designing APIs, and working with databases...
+                </p>
+            </div>
+
+            <div class="service-card p-6 shadow-lg rounded-lg">
+                <i class="uil uil-laptop text-4xl text-blue-600"></i>
+                <h4 class="font-bold text-lg mt-4">Front-End Fundamentals</h4>
+                <p class="text-gray-600 mt-2">
+                    While not my main focus, I have a solid foundation in HTML, CSS, and basic responsive design...
+                </p>
+            </div>
+
+            <div class="service-card p-6 shadow-lg rounded-lg">
+                <i class="uil uil-lightbulb-alt text-4xl text-blue-600"></i>
+                <h4 class="font-bold text-lg mt-4">Problem Solving</h4>
+                <p class="text-gray-600 mt-2">
+                    I enjoy solving technical problems and breaking complex ideas into smaller parts...
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section with Enhanced Form -->
+        <section id="contact" class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-50 to-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                    <!-- Left Side -->
+                    <div class="flex flex-col gap-4 text-center lg:text-left items-center lg:items-start">
+                        <img src="Profile.jpg" 
+                             alt="Professional photo of Justine Mantua" 
+                             class="w-64 h-64 object-cover rounded-lg shadow-xl">
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-4">Contact Me</h2>
+                        <p class="text-gray-600 text-base leading-relaxed max-w-md">
+                            I am available for freelance work, internships, and professional collaborations. Please use the form to get in touch — I will respond within 2 business days.
+                        </p>
+                        <div class="flex gap-3 mt-2">
+                            <a href="https://www.facebook.com/justine.mantua.5" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" 
+                                     alt="Facebook" 
+                                     class="w-9 h-9 transition-transform hover:scale-110">
+                            </a>
+                            <a href="https://github.com/JustineMantua" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+                                     alt="GitHub" 
+                                     class="w-9 h-9 transition-transform hover:scale-110">
+                            </a>
+                            <a href="https://www.instagram.com/terrifyinglydoomed?igsh=NG9ia2IzZWxqMjA5&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                                <img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" 
+                                     alt="Instagram" 
+                                     class="w-9 h-9 transition-transform hover:scale-110">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Enhanced Form -->
+                    <div class="w-full">
+                        <form id="contact-form" class="bg-white p-6 md:p-8 rounded-lg shadow-lg space-y-4">
+                            <div>
+                                <label for="contact-name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Full Name <span class="text-red-500">*</span>
+                                </label>
+                                <input id="contact-name" 
+                                       name="name" 
+                                       type="text" 
+                                       required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+
+                            <div>
+                                <label for="contact-number" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Contact Number <span class="text-red-500">*</span>
+                                </label>
+                                <input id="contact-number" 
+                                       name="contact" 
+                                       type="tel" 
+                                       required 
+                                       placeholder="+63 912 345 6789"
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+
+                            <div>
+                                <label for="contact-email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Email Address <span class="text-red-500">*</span>
+                                </label>
+                                <input id="contact-email" 
+                                       name="email" 
+                                       type="email" 
+                                       required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+
+                            <div>
+                                <label for="contact-message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Message <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="contact-message" 
+                                          name="message" 
+                                          rows="5" 
+                                          required
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 hover:bg-blue-700 hover:-translate-y-1 shadow-md hover:shadow-lg">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submissions Table Section -->
+        <section id="submissions" class="py-16 px-4 md:px-8 lg:px-16 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-8">Form Submissions</h2>
+                
+                <!-- Clear All Button -->
+                <div class="flex justify-end mb-4">
+                    <button id="clear-all-btn" 
+                            class="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:bg-red-700 hover:-translate-y-0.5 shadow-md">
+                        Clear All Submissions
+                    </button>
+                </div>
+
+          <div class="overflow-x-auto shadow-lg rounded-lg">
+  <table class="w-full bg-white border-collapse">
+
+    <thead>
+        <tr class="bg-blue-600 text-white">
+        <th class="px-4 py-3">#</th>
+        <th class="px-4 py-3">Name</th>
+        <th class="px-4 py-3">Contact</th>
+        <th class="px-4 py-3">Email</th>
+        <th class="px-4 py-3">Message</th>
+        <th class="px-4 py-3">Date</th>
+        <th class="px-4 py-3 text-center">Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="submissions-table-body">
+      <!-- JS inserts rows here -->
+    </tbody>
+
+  </table>
+</div>
+
+
+                <!-- Empty State -->
+                <div id="empty-state" class="text-center py-12 hidden">
+                    <p class="text-gray-500 text-lg">No submissions yet. Fill out the contact form above to see your submissions here!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <div>
+                        <p class="footer-text">Justine Mantua — BSIT Student | Aspiring Web Developer</p>
+                    </div>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/justine.mantua.5" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://github.com/JustineMantua" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/terrifyinglydoomed?igsh=NG9ia2IzZWxqMjA5&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" alt="Instagram" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container footer-bottom">
+                <small>© <span id="year"></span> Justine Mantua. All rights reserved.</small>
+            </div>
+        </footer>
+    </main>
+
+    <script data-cfasync="false" src="/"></script>
+<script>
+const STORAGE_KEY = "submissions";
+
+/* =========================
+   FORM SUBMIT
+========================= */
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const entry = {
+    name: document.getElementById("contact-name").value.trim(),
+    contact: document.getElementById("contact-number").value.trim(),
+    email: document.getElementById("contact-email").value.trim(),
+    message: document.getElementById("contact-message").value.trim(),
+    date: new Date().toLocaleString()
+  };
+
+  if(!entry.name || !entry.contact || !entry.email || !entry.message){
+    alert("Please fill all required fields");
+    return;
+  }
+
+  const data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  data.push(entry);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+
+  form.reset();
+  renderTable();
+});
+
+/* =========================
+   RENDER TABLE
+========================= */
+function renderTable(){
+  const tbody = document.getElementById("submissions-table-body");
+  const emptyState = document.getElementById("empty-state");
+  const data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+
+  tbody.innerHTML = "";
+
+  if(data.length === 0){
+    emptyState.classList.remove("hidden");
+    return;
+  }
+
+  emptyState.classList.add("hidden");
+
+  data.forEach((s,i)=>{
+    const row = `
+      <tr class="border-b">
+        <td class="px-4 py-2">${i+1}</td>
+        <td class="px-4 py-2">${s.name}</td>
+        <td class="px-4 py-2">${s.contact}</td>
+        <td class="px-4 py-2">${s.email}</td>
+        <td class="px-4 py-2">${s.message}</td>
+        <td class="px-4 py-2">${s.date}</td>
+        <td class="px-4 py-2 text-center">
+          <button onclick="deleteRow(${i})"
+            class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
+            Delete
+          </button>
+        </td>
+      </tr>
+    `;
+    tbody.insertAdjacentHTML("beforeend", row);
+  });
+}
+
+/* =========================
+   DELETE ROW
+========================= */
+function deleteRow(index){
+  const data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  data.splice(index,1);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  renderTable();
+}
+
+/* =========================
+   CLEAR ALL
+========================= */
+document.getElementById("clear-all-btn").addEventListener("click", ()=>{
+  if(confirm("Clear all submissions?")){
+    localStorage.removeItem(STORAGE_KEY);
+    renderTable();
+  }
+});
+
+/* =========================
+   FOOTER YEAR
+========================= */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* =========================
+   LOAD ON START
+========================= */
+renderTable();
+</script>
+
+
+    </body>
 </html>
+
+
+
+
+    
