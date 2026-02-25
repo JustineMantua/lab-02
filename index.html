@@ -31,11 +31,14 @@
                         <a href="#services" class="nav-link">About Me</a>
                     </li>
                     <li>
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li>
-                        <a href="#submissions" class="nav-link">Submissions</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
+                  <!--   <li>
+                        <a href="#submissions" class="nav-link">Submissions</a>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -43,8 +46,8 @@
 
     <main class="main" id="main">
         <!-- Hero Section with Tailwind CSS -->
-        <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 px-4 md:px-8 lg:px-16">
-            <div class="max-w-7xl mx-auto">
+        <section id="home" class="pt-32 pb-32 md:pt-40 md:pb-40 px-4 md:px-8 lg:px-16 min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto w-full">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[500px]">
                     <!-- Left Side - Text Content -->
                     <div class="order-2 lg:order-1 text-center lg:text-left">
@@ -81,10 +84,10 @@
             <div id="services"></div>
         </section>
 
-        <!-- About Me Section -->
+        
     <!-- About Me Section -->
-<section class="services section py-16">
-    <div class="max-w-7xl mx-auto px-6 text-center">
+<section class="services section py-20 px-4 md:px-8 lg:px-16 min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto w-full">
 
         <div class="services-info max-w-3xl mx-auto">
             <h1 class="heading2 text-3xl md:text-4xl font-bold text-blue-900 mb-4">
@@ -126,10 +129,81 @@
     </div>
 </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 px-4 md:px-8 lg:px-16 bg-white min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto w-full">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">My Projects</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Here are some of my recent projects that showcase my skills in web development and problem-solving.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 bg-white border">
+                        <div class="bg-blue-600 h-48 flex items-center justify-center">
+                            <i class="uil uil-react text-white text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Portfolio Website</h3>
+                            <p class="text-gray-600 mb-4">
+                                A responsive personal portfolio built with HTML, CSS, and JavaScript. Features smooth scrolling, contact form, and modern design.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">HTML</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">CSS</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 bg-white border">
+                        <div class="bg-blue-600 h-48 flex items-center justify-center">
+                            <i class="uil uil-database text-white text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Task Management App</h3>
+                            <p class="text-gray-600 mb-4">
+                                A full-featured todo application with local storage persistence. Users can add, edit, delete, and mark tasks as complete.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">JavaScript</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">LocalStorage</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">DOM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="rounded-lg shadow-lg overflow-hidden transition-shadow duration-300 bg-white border">
+                        <div class="bg-blue-600 h-48 flex items-center justify-center">
+                            <i class="uil uil-calculator-alt text-white text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Calculator Application</h3>
+                            <p class="text-gray-600 mb-4">
+                                A functional calculator built from scratch with a clean UI. Supports basic arithmetic operations with keyboard and mouse input support.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">JavaScript</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">HTML/CSS</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-medium">Event Handling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="height: 50px">
+            <div id="contact"></div>
+        </section>
 
         <!-- Contact Section with Enhanced Form -->
-        <section id="contact" class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-50 to-gray-100">
-            <div class="max-w-7xl mx-auto">
+        <section class="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto w-full">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                     <!-- Left Side -->
                     <div class="flex flex-col gap-4 text-center lg:text-left items-center lg:items-start">
@@ -218,8 +292,8 @@
         </section>
 
         <!-- Submissions Table Section -->
-        <section id="submissions" class="py-16 px-4 md:px-8 lg:px-16 bg-white">
-            <div class="max-w-7xl mx-auto">
+        <section id="submissions" class="py-20 px-4 md:px-8 lg:px-16 bg-white min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto w-full">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-8">Form Submissions</h2>
                 
                 <!-- Clear All Button -->
@@ -351,7 +425,7 @@ function renderTable(){
           <button onclick="deleteRow(${i})"
             class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700">
             Delete
-          </button>
+          </button>     
         </td>
       </tr>
     `;
